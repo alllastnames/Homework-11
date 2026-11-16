@@ -4,16 +4,9 @@ html, body {
 }
 
 canvas {
-  padding: 0;
-    margin: auto;
-    display: block;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+  display: block;
+  margin: auto;
 }
-
 
 h1{
   text-align: center;
@@ -25,7 +18,7 @@ h1{
 
 
 #tidbit{
-  transform: translateY(590px);
+
   color: white;
 }
 
@@ -36,7 +29,7 @@ p{
   font-style: normal;
   font-size: larger;
   color:white;
-  transform: translateY(640px);
+  
 }
 
 .container{
@@ -46,7 +39,7 @@ p{
   font-style: normal;
   font-size: larger;
   text-align: center;
-  transform: translateY(690px);
+ 
 }
 
 body{
