@@ -1,5 +1,5 @@
 function setup(){
-  createCanvas(400, 600);
+  createCanvas(400, 550);
   angleMode(DEGREES);
   rectMode(CENTER);
   noStroke();
