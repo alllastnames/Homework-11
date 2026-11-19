@@ -85,7 +85,8 @@ function draw() {
     fill(255)
     text('Repeating Sounds',windowWidth/2, windowHeight*0.3);
     text('Radio',windowWidth/2, windowHeight*0.35);
-
-    image(img,windowWidth/2.45,windowHeight*.085,100,100)
+  
+    imageMode(CENTER);
+    image(img,windowWidth/2,windowHeight*.15,100,100)
    }
 
