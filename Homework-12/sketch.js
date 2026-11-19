@@ -78,7 +78,7 @@ function draw() {
    let x = map(i, 0, spectrum.length, 0, width);     
    let h = -height + map(spectrum[i], 0, 0.1, height, 0);
    rect(x, height, width / spectrum.length, h * 1)
-
+   }
      fill(255)
     circle(windowWidth/2,windowHeight*.15,125);
 
@@ -88,4 +88,4 @@ function draw() {
 
     image(img,windowWidth/2.45,windowHeight*.085,100,100)
    }
-}
+
