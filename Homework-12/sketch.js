@@ -4,11 +4,11 @@ let img;
 
 async function setup() {
   createCanvas(windowWidth, windowHeight*0.675);
-  soundfile = await loadSound('assets/HW 12 Sound 1 Loop EXT.mp3');
-  soundfile2 = await loadSound('assets/HW 12 Sound 2 Loop EXT.mp3');
-  soundfile3 = await loadSound('assets/HW 12 Sound 3 Loop EXT.mp3');
+  soundfile = await loadSound('assets/HW-12-Sound-1-Loop-EXT.mp3');
+  soundfile2 = await loadSound('assets/HW-12-Sound-2-Loop-EXT.mp3');
+  soundfile3 = await loadSound('assets/HW-12-Sound-3-Loop-EXT.mp3');
   font = await loadFont('assets/Monoton-Regular.ttf');
-  img = await loadImage('assets/Loop symbol.png');
+  img = await loadImage('assets/Loop-symbol.png');
   fft = new p5.FFT();
   soundfile.connect(fft);
   soundfile.loop();
