@@ -4,11 +4,11 @@ let img;
 
 async function setup() {
   createCanvas(windowWidth, windowHeight*0.675);
-  soundfile = await loadSound('assets/HW-12-Sound-1-Loop-EXT.mp3');
-  soundfile2 = await loadSound('assets/HW-12-Sound-2-Loop-EXT.mp3');
-  soundfile3 = await loadSound('assets/HW-12-Sound-3-Loop-EXT.mp3');
-  font = await loadFont('assets/Monoton-Regular.ttf');
-  img = await loadImage('assets/Loop-symbol.png');
+  soundfile = await loadSound('/assets/HW-12-Sound-1-Loop-EXT.mp3');
+  soundfile2 = await loadSound('/assets/HW-12-Sound-2-Loop-EXT.mp3');
+  soundfile3 = await loadSound('/assets/HW-12-Sound-3-Loop-EXT.mp3');
+  font = await loadFont('/assets/Monoton-Regular.ttf');
+  img = await loadImage('/assets/Loop-symbol.png');
   fft = new p5.FFT();
   soundfile.connect(fft);
   soundfile.loop();
@@ -79,14 +79,14 @@ function draw() {
    let h = -height + map(spectrum[i], 0, 0.1, height, 0);
    rect(x, height, width / spectrum.length, h * 1)
    }
+
      fill(255)
-    circle(windowWidth/2,windowHeight*.15,125);
+    circle(windowWidth/2,windowHeight*0.15,125);
 
     fill(255)
     text('Repeating Sounds',windowWidth/2, windowHeight*0.3);
     text('Radio',windowWidth/2, windowHeight*0.35);
-  
     imageMode(CENTER);
-    image(img,windowWidth/2,windowHeight*.15,100,100)
+    image(img,windowWidth/2,windowHeight*0.15,100,100)
    }
 
